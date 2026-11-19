@@ -12,7 +12,7 @@ El avatar tiene algo muy valioso y dos problemas.
 
 ## Cómo usar cada dolor
 
-| Dolor del avatar | Rol en la marketing | Por qué |
+| Dolor del avatar | Rol en el marketing | Por qué |
 |---|---|---|
 | Ansiedad, sobrepensar, insomnio | **Puerta de entrada principal** (contenido y anuncios) | Es el dolor más común en profesionales de 30 a 55 y el que más gente busca; la promesa "dejar de sobrepensar" es concreta |
 | Duelo y rupturas del sentido de vida | **Oferta insignia** (programa de acompañamiento) | Es donde la experiencia de José pesa más y la urgencia es alta |
