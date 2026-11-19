@@ -24,7 +24,7 @@
 | Canal | Enlace / usuario | ¿Datos conectados? |
 |---|---|---|
 | Web | https://www.terapiaholistica.com.co/ (WordPress + Elementor) | No (GA4 sin verificar) |
-| Instagram | @josetucoachdevida (según el usuario). La web enlaza a @terapiaholistica_by_jose y @sadhana.reiki | No. Windsor solo tiene conectada la cuenta santiwebpro |
+| Instagram | @josetucoachdevida (189 seguidores, 234 seguidos, 80 publicaciones al 2026-11-19; análisis en informes/2026-11-instagram.md). La web enlaza a @terapiaholistica_by_jose y @sadhana.reiki | No. Windsor solo tiene conectada la cuenta santiwebpro |
 | Facebook | https://www.facebook.com/profile.php?id=100092044933591 | No |
 | WhatsApp | +57 304 135 2170 | No aplica |
 | Google Business Profile | sin dato *(por confirmar si existe)* | No |
