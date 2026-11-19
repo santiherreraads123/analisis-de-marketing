@@ -41,7 +41,7 @@ img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 h1,h2,h3{margin:0;font-weight:400}
 h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,3.2rem);line-height:1.04;letter-spacing:-.01em}
-h2 em,h1 em{font-style:normal;background:linear-gradient(100deg,var(--oro-claro),var(--oro) 45%,#B9864A);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2 em,h1 em{font-style:normal;background:linear-gradient(100deg,var(--oro-claro),var(--oro) 45%,#B9864A);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
 h3{font-family:var(--serif);font-size:1.45rem;line-height:1.2}
 p{margin:0}
 ::selection{background:var(--oro);color:var(--noche)}
@@ -95,7 +95,10 @@ p{margin:0}
 .pill img{width:30px;height:auto}
 .pill span{font-family:var(--display);font-size:.7rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--oro-claro)}
 .hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.1rem,4.3vw,3.9rem);line-height:1;letter-spacing:-.015em;margin:26px 0 24px;text-shadow:0 10px 40px rgba(0,0,0,.4)}
-.hero h1 em{filter:drop-shadow(0 0 22px rgba(201,165,92,.35))}
+.hero h1 em{color:var(--oro-claro);-webkit-text-fill-color:currentColor;text-shadow:0 0 28px rgba(201,165,92,.35)}
+/* Safari no pinta el degradado del padre en palabras animadas: se aplica a cada palabra */
+.js .hero h1 em{background:none}
+.js .hero h1 em .w > span{background:linear-gradient(100deg,var(--oro-claro),var(--oro) 55%,#B9864A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-shadow:none}
 .hero .lead{margin-bottom:34px;color:#C3CCC4}
 .hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px}
 .facts{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:40px}
