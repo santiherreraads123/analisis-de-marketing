@@ -1,0 +1,11 @@
+{
+  "name": "agente-analitica-marketing",
+  "owner": { "name": "santiherreraads123" },
+  "plugins": [
+    {
+      "name": "agente-analitica-marketing",
+      "description": "Skills de analítica, auditoría web, SEO y estrategia de redes sociales en español",
+      "source": "./"
+    }
+  ]
+}

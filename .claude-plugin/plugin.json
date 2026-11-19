@@ -1,0 +1,9 @@
+{
+  "name": "agente-analitica-marketing",
+  "description": "Agente de analítica de marketing: analiza Instagram, Facebook, web y SEO y crea estrategias de crecimiento según el objetivo de cada marca",
+  "version": "1.0.0",
+  "author": { "name": "santiherreraads123" },
+  "repository": "https://github.com/santiherreraads123/analisis-de-marketing",
+  "license": "MIT",
+  "skills": "./skills"
+}
