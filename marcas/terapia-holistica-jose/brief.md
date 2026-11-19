@@ -16,9 +16,12 @@
 - **Meta concreta:** *(por confirmar con la línea base)*. Propuesta: medir 4 semanas y luego apuntar a duplicar conversaciones calificadas por semana y a cerrar al menos 1 de cada 3 en sesión.
 
 ## Audiencia
-- **Cliente ideal (hipótesis):** adultos de 30 a 60 años, mayoría mujeres, que atraviesan una pérdida (duelo, separación), ansiedad o un momento de crisis y buscan un acompañamiento humano y espiritual, complementario a lo médico.
-- **Dolores y deseos:** "no sé cómo seguir", agotamiento emocional, insomnio, sensación de estar bloqueado. Desean paz, claridad y alguien con experiencia que los escuche.
-- **Dónde está:** Instagram y Facebook, Google ("reiki Manizales", "terapia de duelo", "reiki a distancia"), recomendaciones boca a boca.
+Fuente: documento del cliente "Avatar jose tu coach de vida" (Google Docs, leído 2026-11-19). Análisis en `informes/2026-11-avatar-y-mensaje.md`.
+- **Cliente ideal (según el cliente):** hombres y mujeres de 25 a 65 años, profesionales de diversas disciplinas, con o sin pareja. Nicho declarado: salud mental.
+- **Dolores (según el cliente):** ansiedad (desespero, insomnio, futuro trágico, atracones); estrés postraumático (aislamiento, pánico, desconfianza, disociación); patrones desordenados (abandono del autocuidado, baja autoestima); ideación suicida y autolesiones; duelos por rupturas del sentido de vida; dramas transgeneracionales (piloto automático, decisiones impulsivas).
+- **Solución que ofrece:** estabilidad, paz interior, dejar de sobrepensar; tomar conciencia de los patrones; sentido de vida; aprender a vivir con el dolor; "reconocer, responsabilizarse, reconciliarse y repararse"; biodescodificación.
+- **Avatar afinado (propuesta, por validar con los últimos 10 clientes):** profesional de 30 a 55 años en Colombia, con trabajo y responsabilidades, que sobrepiensa, duerme mal y siente que vive en piloto automático, a menudo tras una pérdida o ruptura. Busca un enfoque integral, humano y espiritual, complementario a lo médico.
+- **Dónde está:** Instagram y Facebook, Google ("ansiedad", "reiki Manizales", "terapia de duelo"), recomendaciones boca a boca.
 
 ## Canales y accesos
 | Canal | Enlace / usuario | ¿Datos conectados? |
@@ -37,7 +40,7 @@
 3. Cuentas de Instagram de duelo y bienestar emocional en Colombia.
 
 ## Marca
-- **Propuesta de valor (propuesta):** "Te acompaño a atravesar el duelo y los momentos difíciles con escucha, Reiki y más de 30 años de experiencia. En Manizales o en línea."
+- **Propuesta de valor (propuesta, actualizada con el avatar):** "Recupera tu paz interior y deja de vivir en piloto automático. Te acompaño con el Método 4R, Reiki y más de 30 años de experiencia. En Manizales o en línea."
 - **Tono de voz:** cálido, sereno, cercano (tú), con autoridad tranquila. Sin promesas de curación.
 - **Qué NO debe hacer la marca:** prometer curar enfermedades, sugerir que reemplaza un tratamiento médico o psicológico, usar el tema del suicidio como gancho comercial, mezclar nombres de marca.
 
