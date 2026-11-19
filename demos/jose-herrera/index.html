@@ -103,15 +103,17 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;o
 .facts div{font-size:.86rem;color:var(--gris);line-height:1.35}
 .facts b{display:block;font-family:var(--serif);font-weight:400;font-size:1.65rem;color:var(--carbon);letter-spacing:-.01em}
 
-.portrait{position:relative;justify-self:center;width:min(100%,500px)}
-.portrait .halo{position:absolute;left:50%;top:-7%;width:118%;transform:translateX(-50%);aspect-ratio:1;z-index:0;color:var(--oro);opacity:.55}
+.portrait{position:relative;justify-self:center;width:min(100%,470px)}
+.portrait .halo{position:absolute;left:50%;top:-4%;width:100%;transform:translateX(-50%);aspect-ratio:1;z-index:0;color:var(--oro);opacity:.55}
 .portrait .halo circle{fill:none;stroke:currentColor;stroke-width:.6}
-.arch{position:relative;z-index:1;aspect-ratio:4/5.1;border-radius:999px 999px 28px 28px;overflow:hidden;background:linear-gradient(165deg,#FAF5EC 0%,#EFE5D3 55%,#E4D6BD 100%);box-shadow:0 50px 80px -50px rgba(46,70,59,.55)}
-.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;mix-blend-mode:multiply;transform:scale(1.04);will-change:transform}
-.frame-line{position:absolute;z-index:0;inset:22px -22px -22px 22px;border:1px solid var(--oro);border-radius:999px 999px 28px 28px;opacity:.8}
+/* foto fundida con el fondo: sin marco, bordes difuminados y luz cálida detrás */
+.portrait::before,.about .pic::before{content:"";position:absolute;left:8%;right:8%;top:4%;height:62%;border-radius:50%;background:radial-gradient(closest-side,rgba(201,165,92,.30),rgba(220,229,221,.55) 55%,rgba(220,229,221,0));filter:blur(18px)}
+.portrait::after,.about .pic::after{content:"";position:absolute;left:14%;right:14%;bottom:6%;height:16%;border-radius:50%;background:radial-gradient(closest-side,rgba(46,70,59,.20),rgba(46,70,59,0));filter:blur(10px)}
+.arch{position:relative;aspect-ratio:2/3;margin:0 -6%}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 0;mix-blend-mode:multiply;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 60%,rgba(0,0,0,.65) 80%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 60%,rgba(0,0,0,.65) 80%,transparent 100%)}
 .seal{position:absolute;z-index:3;left:-46px;top:16%;width:132px;height:132px;border-radius:50%;background:var(--marfil);display:grid;place-items:center;box-shadow:0 22px 40px -22px rgba(43,42,40,.45)}
 .seal svg.ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 38s linear infinite}
-.seal svg.ring text{font-family:var(--sans);font-size:10.6px;font-weight:800;fill:var(--salvia);text-transform:uppercase}
+.seal svg.ring text{font-family:var(--sans);font-size:9.6px;font-weight:800;fill:var(--salvia);text-transform:uppercase}
 .seal img{width:56px;height:auto}
 .badge{position:absolute;z-index:3;right:-20px;bottom:8%;display:flex;align-items:center;gap:14px;padding:16px 22px 16px 16px;border-radius:20px;background:rgba(251,248,242,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 24px 40px -24px rgba(43,42,40,.5);border:1px solid rgba(201,165,92,.35)}
 .badge b{font-family:var(--serif);font-weight:400;font-size:2.4rem;line-height:1;color:var(--salvia)}
@@ -135,10 +137,8 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;o
 .js .loaded .hero .w > span{transform:none}
 .js .hero .fade{opacity:0;transform:translateY(18px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
 .js .loaded .hero .fade{opacity:1;transform:none}
-.js .hero .arch{clip-path:inset(100% 0 0 0 round 999px 999px 28px 28px);transition:clip-path 1.6s var(--ease-soft) .2s}
-.js .loaded .hero .arch{clip-path:inset(0 0 0 0 round 999px 999px 28px 28px)}
-.js .hero .frame-line{opacity:0;transform:translate(-22px,-22px);transition:opacity 1.2s var(--ease) .9s,transform 1.4s var(--ease) .9s}
-.js .loaded .hero .frame-line{opacity:.8;transform:none}
+.js .hero .arch{opacity:0;filter:blur(16px);transform:scale(1.04);transition:opacity 1.8s var(--ease) .2s,filter 1.8s var(--ease) .2s,transform 2.2s var(--ease) .2s}
+.js .loaded .hero .arch{opacity:1;filter:none;transform:none}
 .js .hero .halo circle{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s var(--ease-soft)}
 .js .loaded .hero .halo circle{stroke-dashoffset:0}
 
@@ -159,8 +159,8 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;o
 /* revelado al hacer scroll */
 .js .reveal{opacity:0;transform:translateY(34px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease);transition-delay:calc(var(--d,0) * 110ms)}
 .js .reveal.seen{opacity:1;transform:none}
-.js .reveal-img{clip-path:inset(12% 12% 12% 12% round 999px 999px 28px 28px);opacity:.3;transition:clip-path 1.6s var(--ease-soft),opacity 1.4s var(--ease)}
-.js .reveal-img.seen{clip-path:inset(0 0 0 0 round 999px 999px 28px 28px);opacity:1}
+.js .reveal-img{opacity:0;filter:blur(14px);transition:opacity 1.6s var(--ease),filter 1.6s var(--ease)}
+.js .reveal-img.seen{opacity:1;filter:none}
 
 /* te pasa esto */
 .feel .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
@@ -242,12 +242,11 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;o
 .courses li{padding:8px 16px;border-radius:999px;background:var(--arena);font-size:.9rem}
 
 /* sobre José */
+.about{overflow:hidden}
 .about .in{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,100px);align-items:center}
 .about .pic{position:relative;max-width:470px;width:100%;justify-self:center}
-.about .pic .arch{aspect-ratio:4/4.6}
-.about .pic .arch img{object-position:50% 20%}
-.about .pic .frame-line{inset:-18px 18px 18px -18px}
-.about .sign{position:absolute;z-index:3;right:-16px;bottom:-22px;padding:18px 24px;background:var(--marfil);border-radius:18px;box-shadow:0 24px 40px -26px rgba(43,42,40,.5);font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--salvia);line-height:1.2}
+.about .pic .arch{aspect-ratio:900/1213}
+.about .sign{position:absolute;z-index:3;right:-6px;bottom:14%;padding:18px 24px;background:var(--marfil);border-radius:18px;box-shadow:0 24px 40px -26px rgba(43,42,40,.5);font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--salvia);line-height:1.2}
 .about .sign small{display:block;font-family:var(--sans);font-style:normal;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-texto);font-weight:800;margin-top:4px}
 .about h2{font-size:clamp(2rem,3.8vw,3.1rem)}
 .about .quote{font-family:var(--serif);font-weight:300;font-style:italic;font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.4;color:var(--salvia-osc);margin:26px 0}
@@ -348,9 +347,8 @@ html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none !important;transition-duration:.01ms !important;transition-delay:0s !important}
   .js .reveal,.js .hero .fade{opacity:1;transform:none}
-  .js .reveal-img,.js .hero .arch{clip-path:none;opacity:1}
+  .js .reveal-img,.js .hero .arch{filter:none;opacity:1;transform:none}
   .js .hero .w > span{transform:none}
-  .js .hero .frame-line{opacity:.8;transform:none}
   .js .hero .halo circle{stroke-dashoffset:0}
   .how .row::before{transform:scaleX(1)}
   .steps .rail{transform:scaleY(1)}
@@ -411,7 +409,6 @@ html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
 
     <div class="portrait">
       <svg class="halo" viewBox="0 0 200 200" aria-hidden="true"><circle pathLength="1" cx="100" cy="100" r="96" transform="rotate(-90 100 100)"/></svg>
-      <span class="frame-line" aria-hidden="true"></span>
       <div class="arch">
         <picture>
           <source type="image/webp" srcset="assets/jose-640.webp 640w, assets/jose-1100.webp 1100w" sizes="(max-width:900px) 86vw, 520px">
@@ -419,7 +416,7 @@ html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
         </picture>
       </div>
       <div class="seal fade" style="transition-delay:1.2s" aria-hidden="true">
-        <svg class="ring" viewBox="0 0 120 120"><defs><path id="c" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#c" textLength="286" lengthAdjust="spacing">Cuerpo · Mente · Alma ·</textPath></text></svg>
+        <svg class="ring" viewBox="0 0 120 120"><defs><path id="c" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#c" textLength="286" lengthAdjust="spacing">Mente · Cuerpo · Espíritu ·</textPath></text></svg>
         <img src="assets/simbolo.png" alt="" width="379" height="312">
       </div>
       <div class="badge fade" style="transition-delay:1.35s"><b data-count="30">+30</b><span>años acompañando procesos de vida</span></div>
@@ -464,7 +461,7 @@ html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
     <div class="head reveal">
       <div class="eyebrow">El Método 4R</div>
       <h2 id="t-metodo">Cuatro pasos para sanar <em>lo que hoy te pesa</em></h2>
-      <p class="lead">Es la forma en que José acompaña cada proceso. Se combina con coaching y Reiki para trabajar de manera integral: cuerpo, mente y alma.</p>
+      <p class="lead">Es la forma en que José acompaña cada proceso. Se combina con coaching y Reiki para trabajar de manera integral: mente, cuerpo y espíritu.</p>
       <blockquote>“Para la sanación y la reconexión es necesaria la toma de consciencia de los patrones que subyacen a lo que sentimos.”<cite>José Herrera</cite></blockquote>
     </div>
     <div class="steps" data-rail>
@@ -559,11 +556,10 @@ html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
 <section class="band about" id="sobre-jose" aria-labelledby="t-about">
   <div class="in">
     <div class="pic reveal">
-      <span class="frame-line" aria-hidden="true"></span>
       <div class="arch reveal-img">
         <picture>
           <source type="image/webp" srcset="assets/jose-retrato.webp">
-          <img data-parallax="0.05" src="assets/jose-retrato.jpg" alt="Retrato de José Herrera" width="900" height="983" loading="lazy">
+          <img data-parallax="0.05" src="assets/jose-retrato.jpg" alt="Retrato de José Herrera" width="900" height="1213" loading="lazy">
         </picture>
       </div>
       <div class="sign">José Herrera<small>Terapeuta holístico</small></div>
@@ -590,11 +586,11 @@ html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
     <div>
       <div class="head reveal" style="margin-bottom:0">
         <div class="eyebrow">Nuestro símbolo</div>
-        <h2 id="t-mean">Cuerpo, mente y alma, y en el centro <em>lo que vuelve a crecer</em></h2>
+        <h2 id="t-mean">Mente, cuerpo y espíritu, y en el centro <em>lo que vuelve a crecer</em></h2>
       </div>
       <div class="legend">
-        <div class="reveal" style="--d:0"><i style="background:#F1E6CC;color:var(--oro-texto)"><svg aria-hidden="true"><use href="#sun"/></svg></i><p><b>El arco dorado</b><span>La luz y el propósito que te guían.</span></p></div>
-        <div class="reveal" style="--d:1"><i style="background:var(--salvia-claro);color:var(--salvia)"><svg aria-hidden="true"><use href="#stones"/></svg></i><p><b>Los dos círculos verdes</b><span>El cuerpo y la mente, en equilibrio.</span></p></div>
+        <div class="reveal" style="--d:0"><i style="background:#F1E6CC;color:var(--oro-texto)"><svg aria-hidden="true"><use href="#sun"/></svg></i><p><b>El arco dorado</b><span>El espíritu: la luz y el propósito que te guían.</span></p></div>
+        <div class="reveal" style="--d:1"><i style="background:var(--salvia-claro);color:var(--salvia)"><svg aria-hidden="true"><use href="#stones"/></svg></i><p><b>Los dos círculos verdes</b><span>La mente y el cuerpo, en equilibrio.</span></p></div>
         <div class="reveal" style="--d:2"><i style="background:#E3EBD2;color:#5E7A33"><svg aria-hidden="true"><use href="#leaf"/></svg></i><p><b>El brote al centro</b><span>Lo que sana cuando los tres se encuentran.</span></p></div>
       </div>
     </div>
@@ -749,7 +745,7 @@ html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
       var r=img.parentNode.getBoundingClientRect();
       if(r.bottom<0||r.top>innerHeight)return;
       var d=(r.top+r.height/2-innerHeight/2)*-parseFloat(img.dataset.parallax);
-      img.style.transform='translateY('+d.toFixed(1)+'px) scale(1.12)';
+      img.style.transform='translateY('+d.toFixed(1)+'px)';
     });
     if(rail){
       var rr=rail.getBoundingClientRect(),mid=innerHeight*.6;
