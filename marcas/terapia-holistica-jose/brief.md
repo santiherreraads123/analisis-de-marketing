@@ -46,7 +46,7 @@
 - José no identifica competidores. Referencia: terapeutas holísticos y de Reiki de Manizales en Google Maps y Doctoralia.
 
 ## Marca
-- **Nombre:** José Herrera · Terapia Holística (elegido por José). Logo: símbolo de tres círculos (cuerpo, mente y alma) con brote al centro + "José" + "Terapia Holística".
+- **Nombre:** José Herrera · Terapia Holística (elegido por José). Logo: símbolo de tres círculos (mente, cuerpo y espíritu) con brote al centro + "José" + "Terapia Holística".
 - **Paleta:** salvia profundo #3F5E4F, terracota #A65A3C (solo botones y CTA), arena #F4EEE4, oro viejo #C9A55C, carbón cálido #2B2A28, salvia claro #DCE5DD.
 - **Propuesta de valor:** "Recupera tu paz interior y deja de vivir en piloto automático. Proceso de acompañamiento con el Método 4R y Reiki, en Manizales y online."
 - **Método 4R (en palabras de José):** reconocer los patrones que hay detrás de los síntomas; responsabilizarse, aceptándolos y cambiando conductas y emociones asociadas; reconciliarse desde el perdón a sí mismo y al clan familiar; repararse o reinventarse hacia una nueva versión de sí mismo.

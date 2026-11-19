@@ -1,6 +1,6 @@
 # Marca José Herrera · Terapia Holística
 
-Logo elegido por el cliente (tres círculos: cuerpo, mente y alma, con brote al centro) con el descriptor "Terapia Holística". PNG con fondo transparente.
+Logo elegido por el cliente (tres círculos: mente, cuerpo y espíritu, con brote al centro) con el descriptor "Terapia Holística". PNG con fondo transparente.
 
 - logo-jose-terapia-holistica-horizontal.png / -negativo.png (para fondos oscuros) / -vertical.png
 - simbolo.png / simbolo-negativo.png (foto de perfil, favicon)
