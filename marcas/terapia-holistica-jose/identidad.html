@@ -1,0 +1,178 @@
+<title>Identidad José Herrera</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+/* Layout: tablero de marca en una columna ancha; muestras de color en fila, conceptos de logo en tarjetas iguales, aplicaciones al final */
+:root{
+  --salvia:#3F5E4F; --terracota:#A65A3C; --arena:#F4EEE4; --oro:#C9A55C; --carbon:#2B2A28; --salvia-claro:#DCE5DD;
+  --bg:#FAF8F4; --surface:#FFFFFF; --fg:#2B2A28; --muted:#5E625D; --line:#E2DDD3; --brand:#3F5E4F;
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --body:"Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1B211E;--surface:#232B27;--fg:#ECE7DE;--muted:#A9AFA8;--line:#38423D;--brand:#9DBBA9;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1B211E;--surface:#232B27;--fg:#ECE7DE;--muted:#A9AFA8;--line:#38423D;--brand:#9DBBA9;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;color:var(--brand)}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.1}
+h2{font-size:1.6rem}
+h3{font-size:1.2rem}
+p{margin:0;max-width:65ch}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+section{display:grid;gap:20px}
+header{display:grid;gap:14px}
+.lead{font-size:1.1rem;color:var(--muted)}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.sw{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.chip{height:96px;display:flex;align-items:flex-end;padding:10px;font-size:.8rem;font-weight:700}
+.sw .meta{padding:10px 12px;display:grid;gap:2px;font-size:.85rem}
+.sw .meta b{font-size:.95rem}
+.sw code{font-variant-numeric:tabular-nums;color:var(--muted)}
+.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.logo{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:14px;align-content:start;min-width:0}
+.logo.rec{border-color:var(--terracota);border-width:2px}
+.tag{justify-self:start;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--terracota);color:#fff;padding:3px 8px;border-radius:4px}
+.art{background:var(--arena);border-radius:8px;padding:22px 12px;display:flex;align-items:center;justify-content:center;gap:12px}
+.art svg{flex:none}
+.word{font-family:var(--display);color:var(--salvia);line-height:1.05}
+.word b{display:block;font-size:1.45rem;font-weight:600}
+.word span{font-family:var(--body);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--carbon)}
+.mini{display:flex;gap:10px;align-items:center}
+.mini .av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center}
+.mini small{color:var(--muted);font-size:.8rem}
+.type{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;display:grid;gap:10px}
+.type .big{font-family:var(--display);font-size:clamp(1.6rem,4vw,2.4rem);color:var(--brand);line-height:1.15}
+.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:12px;min-width:0}
+.ig{display:grid;gap:10px}
+.ig-top{display:flex;gap:14px;align-items:center}
+.ig-av{width:72px;height:72px;border-radius:50%;background:var(--salvia);display:grid;place-items:center;flex:none}
+.ig-name{font-weight:700}
+.ig-bio{font-size:.9rem;white-space:pre-line}
+.hl{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}
+.hl div{flex:none;width:58px;text-align:center;font-size:.68rem;color:var(--muted)}
+.hl i{display:block;width:52px;height:52px;margin:0 auto 4px;border-radius:50%;border:2px solid var(--oro);background:var(--salvia-claro)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--terracota);color:#fff;font-weight:700;padding:12px 18px;border-radius:999px;justify-self:start;text-decoration:none}
+.btn:focus-visible{outline:3px solid var(--oro);outline-offset:2px}
+.hero{background:var(--salvia);color:#fff;border-radius:10px;padding:22px;display:grid;gap:10px}
+.hero h3{color:#fff;font-size:1.35rem}
+.hero p{color:#E4ECE6;font-size:.92rem}
+ul{margin:0;padding-left:1.1rem;display:grid;gap:6px}
+.note{font-size:.9rem;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Propuesta de identidad · noviembre 2026</div>
+  <h1>José Herrera · Terapia Holística</h1>
+  <p class="lead">Concepto "Calma con autoridad": serenidad y 30 años de experiencia, con el verde de la montaña de Manizales. Una sola marca, a nombre de José, para que la gente sepa a quién le escribe.</p>
+</header>
+
+<section>
+  <div class="eyebrow">Paleta</div>
+  <h2>Seis colores con rol fijo</h2>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:var(--salvia);color:#fff">Aa 7.2:1</div><div class="meta"><b>Salvia profundo</b><code>#3F5E4F</code><span>Logo, titulares, secciones</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--terracota);color:#fff">Aa 5.1:1</div><div class="meta"><b>Terracota</b><code>#A65A3C</code><span>Solo botones de WhatsApp y CTA</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--arena);color:var(--carbon)">Aa 12.4:1</div><div class="meta"><b>Arena</b><code>#F4EEE4</code><span>Fondo general</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--oro);color:var(--carbon)">Detalle</div><div class="meta"><b>Oro viejo</b><code>#C9A55C</code><span>Líneas e íconos, nunca texto sobre claro</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--carbon);color:var(--arena)">Aa 12.4:1</div><div class="meta"><b>Carbón cálido</b><code>#2B2A28</code><span>Texto de lectura</span></div></div>
+    <div class="sw"><div class="chip" style="background:var(--salvia-claro);color:var(--salvia)">Aa</div><div class="meta"><b>Salvia claro</b><code>#DCE5DD</code><span>Tarjetas y fondos suaves</span></div></div>
+  </div>
+  <p class="note">Los valores "Aa" son el contraste del texto sobre cada color (WCAG pide 4.5:1 para texto normal).</p>
+</section>
+
+<section>
+  <div class="eyebrow">Logo</div>
+  <h2>Tres conceptos</h2>
+  <div class="logos">
+    <article class="logo rec">
+      <span class="tag">Recomendado</span>
+      <h3>A. Tres esferas</h3>
+      <div class="art">
+        <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="22" r="14" fill="#3F5E4F" fill-opacity=".85"/>
+          <circle cx="22" cy="40" r="14" fill="#C9A55C" fill-opacity=".8"/>
+          <circle cx="42" cy="40" r="14" fill="#A65A3C" fill-opacity=".75"/>
+        </svg>
+        <div class="word"><b>José Herrera</b><span>Terapia holística</span></div>
+      </div>
+      <p>Mente, cuerpo y espíritu como tres círculos que forman una semilla. Retoma el titular actual de la web y se lee bien en la foto de perfil de 110 px.</p>
+      <div class="mini"><div class="av" style="background:var(--arena)"><svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="22" r="14" fill="#3F5E4F" fill-opacity=".85"/><circle cx="22" cy="40" r="14" fill="#C9A55C" fill-opacity=".8"/><circle cx="42" cy="40" r="14" fill="#A65A3C" fill-opacity=".75"/></svg></div><small>Así se ve como foto de perfil</small></div>
+    </article>
+
+    <article class="logo">
+      <span class="tag" style="background:var(--salvia)">Alternativa</span>
+      <h3>B. Manos de luz</h3>
+      <div class="art">
+        <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="24" r="9" fill="#C9A55C"/>
+          <g stroke="#C9A55C" stroke-width="2.5" stroke-linecap="round" fill="none"><path d="M32 8v-4"/><path d="M19 13l-3-3"/><path d="M45 13l3-3"/><path d="M14 24h-4"/><path d="M50 24h4"/></g>
+          <path d="M8 34c4 12 13 20 24 20V40c-8 0-14-4-18-9z" fill="#3F5E4F"/>
+          <path d="M56 34c-4 12-13 20-24 20V40c8 0 14-4 18-9z" fill="#3F5E4F" fill-opacity=".75"/>
+        </svg>
+        <div class="word"><b>José Herrera</b><span>Reiki y acompañamiento</span></div>
+      </div>
+      <p>Dos manos que sostienen una luz. Habla directo del Reiki; es la opción más literal y la que más se parece a otras marcas del sector.</p>
+      <div class="mini"><div class="av" style="background:var(--salvia-claro)"><svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="9" fill="#C9A55C"/><path d="M8 34c4 12 13 20 24 20V40c-8 0-14-4-18-9z" fill="#3F5E4F"/><path d="M56 34c-4 12-13 20-24 20V40c8 0 14-4 18-9z" fill="#3F5E4F" fill-opacity=".75"/></svg></div><small>Así se ve como foto de perfil</small></div>
+    </article>
+
+    <article class="logo">
+      <span class="tag" style="background:var(--salvia)">Alternativa</span>
+      <h3>C. Sendero</h3>
+      <div class="art">
+        <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="18" r="7" fill="#C9A55C"/>
+          <path d="M2 54L22 24l12 16 8-10 20 24z" fill="#3F5E4F"/>
+          <path d="M30 56c6-6-6-10 2-16s4-8 6-10" stroke="#F4EEE4" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="word"><b>José Herrera</b><span>Camino contigo</span></div>
+      </div>
+      <p>Un camino que sube entre montañas hacia la luz. Conecta con el duelo ("camino contigo") y con el paisaje de Manizales.</p>
+      <div class="mini"><div class="av" style="background:var(--arena)"><svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="18" r="7" fill="#C9A55C"/><path d="M2 54L22 24l12 16 8-10 20 24z" fill="#3F5E4F"/><path d="M30 56c6-6-6-10 2-16s4-8 6-10" stroke="#F4EEE4" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div><small>Así se ve como foto de perfil</small></div>
+    </article>
+  </div>
+  <p class="note">Son bocetos para elegir dirección. Con el concepto elegido se hace la versión final (vector, versión horizontal, vertical, monocromática y favicon).</p>
+</section>
+
+<section>
+  <div class="eyebrow">Tipografía</div>
+  <h2>Serif humana para titulares, sans redonda para leer</h2>
+  <div class="type">
+    <div class="big">Recupera tu paz interior y deja de vivir en piloto automático</div>
+    <p>Fraunces para titulares: transmite sabiduría y calidez. Nunito Sans para el texto: cercana y muy legible en el celular. Las dos son gratis en Google Fonts y funcionan en Canva y en Elementor.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Aplicaciones</div>
+  <h2>Cómo se vería donde llegan los mensajes</h2>
+  <div class="apps">
+    <div class="card">
+      <h3>Perfil de Instagram</h3>
+      <div class="ig">
+        <div class="ig-top">
+          <div class="ig-av"><svg width="44" height="44" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="22" r="14" fill="#F4EEE4" fill-opacity=".9"/><circle cx="22" cy="40" r="14" fill="#C9A55C" fill-opacity=".85"/><circle cx="42" cy="40" r="14" fill="#A65A3C" fill-opacity=".85"/></svg></div>
+          <div><div class="ig-name">José Herrera · Ansiedad, Duelo y Reiki</div><small class="note">Terapeuta holístico</small></div>
+        </div>
+        <div class="ig-bio">Te ayudo a dejar de sobrepensar y recuperar tu paz interior 🌿
+Método 4R + Reiki · 30 años · Manizales y online
+👇 Escríbeme "SESIÓN"</div>
+        <div class="hl"><div><i></i>Empieza aquí</div><div><i></i>Cómo es</div><div><i></i>Testimonios</div><div><i></i>A distancia</div><div><i></i>Preguntas</div><div><i></i>Cursos</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Inicio de la web</h3>
+      <div class="hero">
+        <h3>Recupera tu paz interior y deja de vivir en piloto automático</h3>
+        <p>Método 4R y Reiki, con más de 30 años acompañando procesos de vida. Primera sesión de 60 minutos en Manizales u online.</p>
+        <a class="btn" href="https://wa.me/573041352170?text=Hola%20Jos%C3%A9%2C%20vi%20tu%20web%20y%20quiero%20agendar%20una%20primera%20sesi%C3%B3n">Agendar mi primera sesión por WhatsApp</a>
+      </div>
+      <ul>
+        <li>El terracota se usa solo para el botón: así el ojo va directo a escribir.</li>
+        <li>El mensaje de WhatsApp ya viene escrito y dice "vi tu web", para saber de dónde llegó.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
